@@ -53,18 +53,136 @@
                                 >info@devstudio.com</a
                             >
                         </li>
-                        <li class="header-contacts-item">
+                        <li class="contacts-item">
                             <a class="contacts-link" href="tel:+110001111111"
                                 >+11 (000) 111-11-11</a
                             >
                         </li>
                     </ul>
                 </address>
-                <button class="burger-btn" type="button">
+                <button class="burger-btn" type="button" data-menu-open>
                     <svg class="burger-icon" width="24" height="24">
                         <use href="./images/icons.svg#icon-burger"></use>
                     </svg>
                 </button>
+            </div>
+            <div class="mobile-menu" data-menu>
+                <div class="container mobile-menu-container">
+                    <button
+                        type="button"
+                        class="mobile-menu-close-btn"
+                        data-menu-close
+                    >
+                        <svg class="close-btn-icon" width="8" height="8">
+                            <use href="./images/icons.svg#icon-close"></use>
+                        </svg>
+                    </button>
+                    <nav class="mobile-menu-navbar">
+                        <ul class="mobile-menu-list">
+                            <li class="mobile-menu-item">
+                                <a class="mobile-menu-link" href="/">Studio</a>
+                            </li>
+                            <li class="mobile-menu-item">
+                                <a class="mobile-menu-link" href="#"
+                                    >Portfolio</a
+                                >
+                            </li>
+                            <li class="mobile-menu-item">
+                                <a class="mobile-menu-link" href="#"
+                                    >Contacts</a
+                                >
+                            </li>
+                        </ul>
+                    </nav>
+                    <address class="mobile-menu-contacts">
+                        <ul class="mobile-menu-contacts-list">
+                            <li class="mobile-menu-contacts-item">
+                                <a
+                                    class="mobile-menu-contacts-link"
+                                    href="mailto:info@devstudio.com"
+                                    >info@devstudio.com</a
+                                >
+                            </li>
+                            <li class="mobile-menu-contacts-item">
+                                <a
+                                    class="mobile-menu-contacts-link"
+                                    href="tel:+110001111111"
+                                    >+11 (000) 111-11-11</a
+                                >
+                            </li>
+                        </ul>
+                    </address>
+                    <ul class="mobile-menu-social-list">
+                        <li class="mobile-menu-social-item">
+                            <a
+                                href="https://www.instagram.com/"
+                                class="mobile-menu-social-link"
+                                target="blanks"
+                            >
+                                <svg
+                                    class="mobile-menu-social-icon"
+                                    width="24"
+                                    height="24"
+                                >
+                                    <use
+                                        href="./images/icons.svg#icon-instagram"
+                                    ></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="mobile-menu-social-item">
+                            <a
+                                href="https://x.com/"
+                                class="mobile-menu-social-link"
+                                target="blanks"
+                            >
+                                <svg
+                                    class="mobile-menu-social-icon"
+                                    width="24"
+                                    height="24"
+                                >
+                                    <use
+                                        href="./images/icons.svg#icon-twitter"
+                                    ></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="mobile-menu-social-item">
+                            <a
+                                href="https://www.facebook.com/"
+                                class="mobile-menu-social-link"
+                                target="blanks"
+                            >
+                                <svg
+                                    class="mobile-menu-social-icon"
+                                    width="24"
+                                    height="24"
+                                >
+                                    <use
+                                        href="./images/icons.svg#icon-facebook"
+                                    ></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="mobile-menu-social-item">
+                            <a
+                                href="https://www.linkedin.com/"
+                                class="mobile-menu-social-link"
+                                target="blanks"
+                            >
+                                <svg
+                                    class="mobile-menu-social-icon"
+                                    width="24"
+                                    height="24"
+                                >
+                                    <use
+                                        href="./images/icons.svg#icon-linkedin"
+                                    ></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </header>
 
@@ -173,10 +291,19 @@
                     <h2 class="section-title">Our Team</h2>
                     <ul class="team-list">
                         <li class="team-list-item">
-                            <img
-                                src="./images/man-photo-mark.jpg"
-                                alt="man photo smiling"
-                            />
+                            <picture>
+                                <source
+                                    srcset="
+                                        ./images/team-img/mark-photo-@1x.jpg 1x,
+                                        ./images/team-img/mark-photo-@2x.jpg 2x
+                                    "
+                                />
+
+                                <img
+                                    src="./images/team-img/mark-photo-@1x.jpg"
+                                    alt="man photo smiling"
+                                />
+                            </picture>
                             <div class="team-card-capture">
                                 <h3 class="team-item-title">Mark Guerrero</h3>
                                 <p class="team-item-text">Product Designer</p>
@@ -186,6 +313,7 @@
                                             class="social-network-link"
                                             href="https://www.instagram.com/"
                                             target="blanks"
+                                            rel="no-referrer nooppener"
                                         >
                                             <svg
                                                 class="social-network-icon"
@@ -203,6 +331,7 @@
                                             class="social-network-link"
                                             href="https://x.com/"
                                             target="blanks"
+                                            rel="no-referrer nooppener"
                                         >
                                             <svg
                                                 class="social-network-icon"
@@ -220,6 +349,7 @@
                                             class="social-network-link"
                                             href="https://www.facebook.com/"
                                             target="blanks"
+                                            rel="no-referrer nooppener"
                                         >
                                             <svg
                                                 class="social-network-icon"
@@ -237,6 +367,7 @@
                                             class="social-network-link"
                                             href="https://www.linkedin.com/"
                                             target="blanks"
+                                            rel="no-referrer nooppener"
                                         >
                                             <svg
                                                 class="social-network-icon"
@@ -253,10 +384,19 @@
                             </div>
                         </li>
                         <li class="team-list-item">
-                            <img
-                                src="./images/man-photo-tom.jpg"
-                                alt="man photo smiling"
-                            />
+                            <picture>
+                                <source
+                                    srcset="
+                                        ./images/team-img/tom-photo-@1x.jpg 1x,
+                                        ./images/team-img/tom-photo-@2x.jpg 2x
+                                    "
+                                />
+
+                                <img
+                                    src="./images/team-img/tom-photo-@1x.jpg"
+                                    alt="man photo smiling"
+                                />
+                            </picture>
                             <div class="team-card-capture">
                                 <h3 class="team-item-title">Mark Guerrero</h3>
                                 <p class="team-item-text">Product Designer</p>
@@ -266,6 +406,7 @@
                                             class="social-network-link"
                                             href="https://www.instagram.com/"
                                             target="blanks"
+                                            rel="no-referrer nooppener"
                                         >
                                             <svg
                                                 class="social-network-icon"
@@ -283,6 +424,7 @@
                                             class="social-network-link"
                                             href="https://x.com/"
                                             target="blanks"
+                                            rel="no-referrer nooppener"
                                         >
                                             <svg
                                                 class="social-network-icon"
@@ -300,6 +442,7 @@
                                             class="social-network-link"
                                             href="https://www.facebook.com/"
                                             target="blanks"
+                                            rel="no-referrer nooppener"
                                         >
                                             <svg
                                                 class="social-network-icon"
@@ -317,6 +460,7 @@
                                             class="social-network-link"
                                             href="https://www.linkedin.com/"
                                             target="blanks"
+                                            rel="no-referrer nooppener"
                                         >
                                             <svg
                                                 class="social-network-icon"
@@ -333,10 +477,20 @@
                             </div>
                         </li>
                         <li class="team-list-item">
-                            <img
-                                src="./images/woman-photo-camila.jpg"
-                                alt="woman photo smiling"
-                            />
+                            <picture>
+                                <source
+                                    srcset="
+                                        ./images/team-img/camila-photo-@1x.jpg 1x,
+                                        ./images/team-img/camila-photo-@2x.jpg 2x
+                                    "
+                                />
+
+                                <img
+                                    src="./images/team-img/camila-photo-@1x.jpg"
+                                    alt="woman photo smiling"
+                                />
+                            </picture>
+
                             <div class="team-card-capture">
                                 <h3 class="team-item-title">Camila Garcia</h3>
                                 <p class="team-item-text">Marketing</p>
@@ -346,6 +500,7 @@
                                             class="social-network-link"
                                             href="https://www.instagram.com/"
                                             target="blanks"
+                                            rel="no-referrer nooppener"
                                         >
                                             <svg
                                                 class="social-network-icon"
@@ -363,6 +518,7 @@
                                             class="social-network-link"
                                             href="https://x.com/"
                                             target="blanks"
+                                            rel="no-referrer nooppener"
                                         >
                                             <svg
                                                 class="social-network-icon"
@@ -380,6 +536,7 @@
                                             class="social-network-link"
                                             href="https://www.facebook.com/"
                                             target="blanks"
+                                            rel="no-referrer nooppener"
                                         >
                                             <svg
                                                 class="social-network-icon"
@@ -397,6 +554,7 @@
                                             class="social-network-link"
                                             href="https://www.linkedin.com/"
                                             target="blanks"
+                                            rel="no-referrer nooppener"
                                         >
                                             <svg
                                                 class="social-network-icon"
@@ -413,10 +571,20 @@
                             </div>
                         </li>
                         <li class="team-list-item">
-                            <img
-                                src="./images/man-photo-daniel.jpg"
-                                alt="man photo smiling"
-                            />
+                            <picture>
+                                <source
+                                    srcset="
+                                        ./images/team-img/daniel-photo-@1x.jpg 1x,
+                                        ./images/team-img/daniel-photo-@2x.jpg 2x
+                                    "
+                                />
+
+                                <img
+                                    src="./images/team-img/daniel-photo-@1x.jpg"
+                                    alt="man photo smiling"
+                                />
+                            </picture>
+
                             <div class="team-card-capture">
                                 <h3 class="team-item-title">Daniel Wilson</h3>
                                 <p class="team-item-text">UI Designer</p>
@@ -502,11 +670,29 @@
                     <ul class="portfolio-list">
                         <li class="portfolio-item">
                             <div class="thumb">
-                                <img
-                                    src="./images/img-bank-app-screens.jpg"
-                                    alt="Screenshots from a banking app"
-                                    width="360"
-                                />
+                                <picture>
+                                    <source
+                                        media="(max-width: 767px)"
+                                        srcset="
+                                            ./images/portfolio-img/banking-app-img-mob-@1x.jpg 1x,
+                                            ./images/portfolio-img/banking-app-img-mob-@2x.jpg 2x
+                                        "
+                                    />
+                                    <source
+                                        media="(min-width: 768px)"
+                                        srcset="
+                                            ./images/portfolio-img/banking-app-img-@1x.jpg 1x,
+                                            ./images/portfolio-img/banking-app-img-@2x.jpg 2x
+                                        "
+                                    />
+
+                                    <img
+                                        src="./images/portfolio-img/banking-app-img-mob-@1x.jpg"
+                                        alt="Screenshots from a banking app"
+                                        width="360"
+                                    />
+                                </picture>
+
                                 <p class="thumb-overlay">
                                     14 Stylish and User-Friendly App Design
                                     Concepts · Task Manager App · Calorie
@@ -523,11 +709,29 @@
                         </li>
                         <li class="portfolio-item">
                             <div class="thumb">
-                                <img
-                                    src="./images/img-cashless-payment.jpg"
-                                    alt="Cashless terminal and phone"
-                                    width="360"
-                                />
+                                <picture>
+                                    <source
+                                        media="(max-width: 767px)"
+                                        srcset="
+                                            ./images/portfolio-img/cashless-payment-img-mob-@1x.jpg 1x,
+                                            ./images/portfolio-img/cashless-payment-img-mob-@2x.jpg 2x
+                                        "
+                                    />
+                                    <source
+                                        media="(min-width: 768px)"
+                                        srcset="
+                                            ./images/portfolio-img/cashless-payment-img-@1x.jpg 1x,
+                                            ./images/portfolio-img/cashless-payment-img-@2x.jpg 2x
+                                        "
+                                    />
+
+                                    <img
+                                        src="./images/portfolio-img/cashless-payment-img-mob-@1x.jpg"
+                                        alt="Cashless terminal and phone"
+                                        width="360"
+                                    />
+                                </picture>
+
                                 <p class="thumb-overlay">
                                     14 Stylish and User-Friendly App Design
                                     Concepts · Task Manager App · Calorie
@@ -544,11 +748,29 @@
                         </li>
                         <li class="portfolio-item">
                             <div class="thumb">
-                                <img
-                                    src="./images/img-laptop-and-phone.jpg"
-                                    alt="Laptop and phone screens"
-                                    width="360"
-                                />
+                                <picture>
+                                    <source
+                                        media="(max-width: 767px)"
+                                        srcset="
+                                            ./images/portfolio-img/meditation-app-img-mob-@1x.jpg 1x,
+                                            ./images/portfolio-img/meditation-app-img-mob-@2x.jpg 2x
+                                        "
+                                    />
+                                    <source
+                                        media="(min-width: 768px)"
+                                        srcset="
+                                            ./images/portfolio-img/meditation-app-img-@1x.jpg 1x,
+                                            ./images/portfolio-img/meditation-app-img-@2x.jpg 2x
+                                        "
+                                    />
+
+                                    <img
+                                        src="./images/portfolio-img/meditation-app-img-mob-@1x.jpg"
+                                        alt="Laptop and phone screens"
+                                        width="360"
+                                    />
+                                </picture>
+
                                 <p class="thumb-overlay">
                                     14 Stylish and User-Friendly App Design
                                     Concepts · Task Manager App · Calorie
@@ -565,11 +787,29 @@
                         </li>
                         <li class="portfolio-item">
                             <div class="thumb">
-                                <img
-                                    src="./images/img-car-steering-wheel.jpg"
-                                    alt="Hands in black gloves hold a car steering wheel"
-                                    width="360"
-                                />
+                                <picture>
+                                    <source
+                                        media="(max-width: 767px)"
+                                        srcset="
+                                            ./images/portfolio-img/taxi-service-img-mob-@1x.jpg 1x,
+                                            ./images/portfolio-img/taxi-service-img-mob-@2x.jpg 2x
+                                        "
+                                    />
+                                    <source
+                                        media="(min-width: 768px)"
+                                        srcset="
+                                            ./images/portfolio-img/taxi-service-img-@1x.jpg 1x,
+                                            ./images/portfolio-img/taxi-service-img-@2x.jpg 2x
+                                        "
+                                    />
+
+                                    <img
+                                        src="./images/portfolio-img/taxi-service-img-mob-@1x.jpg"
+                                        alt="Hands in black gloves hold a car steering wheel"
+                                        width="360"
+                                    />
+                                </picture>
+
                                 <p class="thumb-overlay">
                                     14 Stylish and User-Friendly App Design
                                     Concepts · Task Manager App · Calorie
@@ -586,11 +826,29 @@
                         </li>
                         <li class="portfolio-item">
                             <div class="thumb">
-                                <img
-                                    src="./images/img-phone-screens.jpg"
-                                    alt="Phone screen and wallpapers"
-                                    width="360"
-                                />
+                                <picture>
+                                    <source
+                                        media="(max-width: 767px)"
+                                        srcset="
+                                            ./images/portfolio-img/screen-illustrations-img-mob-@1x.jpg 1x,
+                                            ./images/portfolio-img/screen-illustrations-img-mob-@2x.jpg 2x
+                                        "
+                                    />
+                                    <source
+                                        media="(min-width: 768px)"
+                                        srcset="
+                                            ./images/portfolio-img/screen-illustrations-img-@1x.jpg 1x,
+                                            ./images/portfolio-img/screen-illustrations-img-@2x.jpg 2x
+                                        "
+                                    />
+
+                                    <img
+                                        src="./images/portfolio-img/screen-illustrations-img-mob-@1x.jpg"
+                                        alt="Phone screen and wallpapers"
+                                        width="360"
+                                    />
+                                </picture>
+
                                 <p class="thumb-overlay">
                                     14 Stylish and User-Friendly App Design
                                     Concepts · Task Manager App · Calorie
@@ -607,11 +865,29 @@
                         </li>
                         <li class="portfolio-item">
                             <div class="thumb">
-                                <img
-                                    src="./images/img-young-girl-with-headset.jpg"
-                                    alt="Young girl look at a phone screen and listen music"
-                                    width="360"
-                                />
+                                <picture>
+                                    <source
+                                        media="(max-width: 767px)"
+                                        srcset="
+                                            ./images/portfolio-img/online-courses-img-mob-@1x.jpg 1x,
+                                            ./images/portfolio-img/online-courses-img-mob-@2x.jpg 2x
+                                        "
+                                    />
+                                    <source
+                                        media="(min-width: 768px)"
+                                        srcset="
+                                            ./images/portfolio-img/online-courses-img-@1x.jpg 1x,
+                                            ./images/portfolio-img/online-courses-img-@2x.jpg 2x
+                                        "
+                                    />
+
+                                    <img
+                                        src="./images/portfolio-img/online-courses-img-mob-@1x.jpg"
+                                        alt="Young girl look at a phone screen and listen music"
+                                        width="360"
+                                    />
+                                </picture>
+
                                 <p class="thumb-overlay">
                                     14 Stylish and User-Friendly App Design
                                     Concepts · Task Manager App · Calorie
@@ -651,6 +927,7 @@
                                 href="https://www.instagram.com/"
                                 class="footer-social-link"
                                 target="blanks"
+                                rel="no-referrer nooppener"
                             >
                                 <svg
                                     class="footer-social-icon"
@@ -668,6 +945,7 @@
                                 href="https://x.com/"
                                 class="footer-social-link"
                                 target="blanks"
+                                rel="no-referrer nooppener"
                             >
                                 <svg
                                     class="footer-social-icon"
@@ -685,6 +963,7 @@
                                 href="https://www.facebook.com/"
                                 class="footer-social-link"
                                 target="blanks"
+                                rel="no-referrer nooppener"
                             >
                                 <svg
                                     class="footer-social-icon"
@@ -702,6 +981,7 @@
                                 href="https://www.linkedin.com/"
                                 class="footer-social-link"
                                 target="blanks"
+                                rel="no-referrer nooppener"
                             >
                                 <svg
                                     class="footer-social-icon"
@@ -744,7 +1024,7 @@
             </div>
         </footer>
 
-        <div class="backdrop hidden" data-modal>
+        <div class="backdrop" data-modal>
             <div class="modal">
                 <button type="button" class="close-btn" data-modal-close>
                     <svg class="close-btn-icon" width="8" height="8">
@@ -828,8 +1108,12 @@
                                     ></use>
                                 </svg>
                             </span>
-                            I accept the terms and conditions of the
-                            <a class="policy-link" href="#">Privacy Policy</a>
+                            <span>
+                                I accept the terms and conditions of the
+                                <a class="policy-link" href="#"
+                                    >Privacy Policy</a
+                                >
+                            </span>
                         </label>
                     </div>
                     <button class="button modal-btn" type="submit">Send</button>
@@ -837,6 +1121,7 @@
             </div>
         </div>
 
+        <script src="./js/menu.js"></script>
         <script src="./js/modal.js"></script>
     </body>
 </html>
